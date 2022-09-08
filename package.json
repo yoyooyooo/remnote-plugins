@@ -1,0 +1,12 @@
+{
+  "name": "remnote-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter \"remnote-plugin-*\" build"
+  },
+  "keywords": [],
+  "author": " <jihu777@@gmail.com>",
+  "license": "ISC"
+}

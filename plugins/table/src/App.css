@@ -1,0 +1,25 @@
+.rn-plugin-table {
+  box-shadow: 0 0 0 1px var(--rn-plugin-table-border-color);
+}
+.rn-plugin-table-cell {
+  box-shadow: 0 0 0 1px var(--rn-plugin-table-border-color);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+}
+.rn-plugin-table-cell > div {
+  max-width: 100%;
+}
+.rn-plugin-table-cell > div,
+.rn-plugin-table-cell > div > div,
+.rn-plugin-table-cell > div > div > .rich-text-editor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rn-plugin-table-cell:focus-within {
+  box-shadow: inset 0 0 0 2px var(--rn-plugin-table-border-active-color);
+}

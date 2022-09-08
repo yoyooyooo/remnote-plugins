@@ -1,0 +1,21 @@
+{
+  "name": "remnote-utils",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "dependencies": {
+    "@remnote/plugin-sdk": "~0.0.9",
+    "@types/lodash-es": "~4.17.6",
+    "lodash-es": "~4.17.21"
+  },
+  "devDependencies": {
+    "tsup": "~6.0.0"
+  }
+}

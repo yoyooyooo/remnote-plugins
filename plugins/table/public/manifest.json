@@ -1,0 +1,21 @@
+{
+  "manifestVersion": 1,
+  "id": "table",
+  "name": "table Manager",
+  "author": "yoyo",
+  "repoUrl": "https://github.com/yoyooyooo/remnote-plugins",
+  "enableOnMobile": false,
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 1
+  },
+  "description": "a plugin help build table in rn",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

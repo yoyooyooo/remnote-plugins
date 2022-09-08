@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "remnote-plugin-table",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "check-types": "tsc",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress --no-open",
+    "build": "rm -rf dist && cross-env NODE_ENV=production webpack --color --progress && cp README.md dist && cd dist && zip -r ../PluginZip.zip ./*",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@remnote/plugin-sdk": "~0.0.9",
+    "ahooks": "~3.6.2",
+    "clsx": "~1.2.1",
+    "debounce": "~1.2.1",
+    "lodash-es": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remnote-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.7.14",
+    "@types/react": "^17.0.49",
+    "@types/react-dom": "^17.0.17",
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "esbuild-loader": "^2.19.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "parcel": "~2.6.2",
+    "postcss": "^8.4.16",
+    "postcss-import": "^14.1.0",
+    "postcss-loader": "^7.0.1",
+    "react-refresh": "^0.14.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.2",
+    "vitest": "~0.19.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
+  }
+}
